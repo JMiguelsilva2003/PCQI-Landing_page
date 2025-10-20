@@ -18,13 +18,19 @@
   <body>
     <header class="navbar">
       <a href="#" class="logo">PCQI</a>
-      <nav>
+      <nav id="nav-links">
         <a href="#hero">Home</a>
         <a href="#historia">Nossa História</a>
         <a href="#video">video</a>
         <a href="#equipa">Equipe</a>
         <a href="#contato">Contato</a>
       </nav>
+
+      <button id="menu-hamburguer" class="hamburguer-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+      </button>
     </header>
 
     <main>
@@ -35,7 +41,7 @@
             melhor: cultivar
           </h1>
           <p>Descubra o futuro da indústria com o nosso Seletor Inteligente.</p>
-          <a href="#historia" class="cta-button">EXPLORE NOSSO PRODUTO</a>
+          <a href="#historia" class="cta-button" id="bt_1">EXPLORE NOSSO PRODUTO</a>
         </div>
       </section>
 
@@ -93,16 +99,56 @@
         data-aos="fade-up"
         data-aos-delay="200"
       >
-        <h2>Nosso Sistema em Ação</h2>
+        <h2>Conheça o Sistema</h2>
         <p class="subtitulo">
-          Veja como nossa tecnologia garante a manga perfeita.
+          Veja como nossa tecnologia mudará a colheita de manga.
         </p>
 
         <div class="video-container">
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com"
+            src="https://www.youtube.com/embed/TGLUxvph7W0"
+            title="Vídeo de demonstração do Seletor Inteligente"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+
+        <h2>Veja o Sistema em Ação - parte 1</h2>
+        <p class="subtitulo">
+          Veja como nossa tecnologia garante a manga perfeita.
+        </p>
+      <p>Você pode acessar o nosso sistema como ADM usando essa conta: <strong class="dados">teste@teste.com</strong> e essa senha: <strong class="dados">123456789</strong></p>
+      <p>Como usuário comum pode usar <strong class="dados">testecomum@testecomum.com</strong> e essa senha: <strong class="dados">123456789</strong> ou criar uma conta</p>
+
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/pM0Z2DnmBUk"
+            title="Vídeo de demonstração do Seletor Inteligente"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+
+        <h2>Veja o Sistema em Ação - parte 2</h2>
+        <p class="subtitulo">
+          Veja como nossa tecnologia garante a manga perfeita.
+        </p>
+        <p>Você pode acessar o nosso sistema como ADM usando essa conta: <strong class="dados">teste@teste.com</strong> e essa senha: <strong class="dados">123456789</strong></p>
+        <p>Como usuário comum pode usar <strong class="dados">testecomum@testecomum.com</strong> e essa senha: <strong class="dados">123456789</strong> ou criar uma conta</p>
+
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/dl7g8zliKMg"
             title="Vídeo de demonstração do Seletor Inteligente"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -307,7 +353,7 @@
           <div
             class="membro-equipa"
             data-name="José Miguel"
-            data-github="https://github.com/"
+            data-github="https://github.com/JMiguelsilva2003"
             data-img="imagens/jm.png"
           >
             <img src="imagens/jm.png" alt="Foto de Jose Miguel" />
@@ -385,7 +431,7 @@
           qualidade com dados e automação. Deixe a nossa IA fazer o trabalho
           difícil e concentre-se no que faz melhor: cultivar mangas excecionais.
         </p>
-        <a href="mailto:contato@mangastech.com" class="cta-button"
+        <a href="https://github.com/JMiguelsilva2003" class="cta-button"
           >Fale Connosco e Transforme Sua Produção</a
         >
       </section>
@@ -416,5 +462,6 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
+    <script src="scriptMD.js"></script>
   </body>
 </html>
