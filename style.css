@@ -484,7 +484,7 @@ body {
     border-radius: 2px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 
     .navbar nav {
         display: none;
@@ -514,5 +514,98 @@ body {
 
     .hamburguer-icon {
         display: flex; 
+    }
+}
+
+.links-section {
+    padding: 4rem 10%;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.links-section h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--cor-escura);
+}
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.link-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s;
+    border: 1px solid #eee;
+}
+.link-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--cor-destaque);
+}
+.link-card h3 {
+    color: var(--cor-destaque);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+.login-info {
+    background: #eef;
+    padding: 1rem;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9rem;
+    display: inline-block;
+    text-align: left;
+}
+
+.alt-bg {
+    background-color: #f0f0f0 !important;
+}
+.video-desc-text {
+    max-width: 800px;
+    margin: 1.5rem auto 0;
+    font-family: var(--fonte-corpo);
+    color: #555;
+}
+
+.tech-stack {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.tech-stack span {
+    background: var(--cor-escura);
+    color: var(--cor-clara);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.cta-button.outline {
+    background-color: transparent;
+    border: 2px solid white;
+    margin-left: 1rem;
+}
+.cta-button.outline:hover {
+    background-color: white;
+    color: var(--cor-destaque);
+}
+
+@media (max-width: 600px) {
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .cta-button.outline {
+        margin-left: 0;
     }
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PCQI-Landing_page</title>
+    <title>PCQI - Plataforma de Controlo de Qualidade Inteligente</title>
 
     <link rel="stylesheet" href="style.css" />
 
@@ -20,10 +20,11 @@
       <a href="#" class="logo">PCQI</a>
       <nav id="nav-links">
         <a href="#hero">Home</a>
-        <a href="#historia">Nossa História</a>
-        <a href="#video">video</a>
+        <a href="#projeto">O Projeto</a>
+        <a href="#demonstracao">Demonstração</a>
+        <a href="#arquitetura">Arquitetura</a>
+        <a href="#docker">Docker & Testes</a>
         <a href="#equipa">Equipe</a>
-        <a href="#contato">Contato</a>
       </nav>
 
       <button id="menu-hamburguer" class="hamburguer-icon">
@@ -41,383 +42,183 @@
             melhor: cultivar
           </h1>
           <p>Descubra o futuro da indústria com o nosso Seletor Inteligente.</p>
-          <a href="#historia" class="cta-button" id="bt_1">EXPLORE NOSSO PRODUTO</a>
+          <div class="hero-buttons">
+            <a href="https://github.com/JMiguelsilva2003/PCQI" target="_blank" class="cta-button">Ver Repositório GitHub</a>
+            <a href="#demonstracao" class="cta-button outline">Ver Demonstração</a>
+          </div>
         </div>
       </section>
 
-      <section class="historia" id="historia" data-aos="fade-up">
+      <section class="historia" id="projeto" data-aos="fade-up">
         <div class="historia-conteudo">
           <div class="historia-imagens">
-            <img
-              src="imagens/cesta_manga.png"
-              alt="Cesta de mangas"
-              class="img-cesta"
-              data-aos="fade-down"
-              duration="400"
-            />
-            <img
-              src="imagens/manga_pe.png"
-              alt="Mangas no pé"
-              class="img-pe"
-              data-aos="fade-left"
-              duration="400"
-            />
-            <img
-              src="imagens/manga_cortada.png"
-              alt="Manga cortada"
-              class="img-cortada"
-              data-aos="fade-right"
-              duration="400"
-            />
+            <img src="imagens/cesta_manga.png" alt="Cesta de mangas" class="img-cesta" data-aos="fade-down" />
+            <img src="imagens/manga_pe.png" alt="Mangas no pé" class="img-pe" data-aos="fade-left" />
+            <img src="imagens/manga_cortada.png" alt="Manga cortada" class="img-cortada" data-aos="fade-right" />
           </div>
 
           <div class="historia-texto">
-            <h2>NOSSA HISTÓRIA:</h2>
-            <h3>DA PAIXÃO À SELEÇÃO INTELIGENTE</h3>
+            <h2>SOBRE O PROJETO:</h2>
+            <h3>PLATAFORMA DE CONTROLO DE QUALIDADE INTELIGENTE</h3>
             <p>
-              O que começou como pura paixão pela fruta, logo enfrentou o
-              desafio da qualidade. A inspeção manual era lenta e nem sempre
-              precisa. Para garantir que apenas as melhores mangas chegassem até
-              você, inovamos.
+              O PCQI é uma solução completa de IoT e Inteligência Artificial para automatizar a seleção de mangas.
+              O sistema utiliza câmeras de alta resolução e redes neurais (CNN) para classificar cada fruta como "Madura" ou "Verde" em tempo real.
             </p>
             <p>
-              Inspirados pela Indústria 4.0, desenvolvemos nosso
-              <strong>Seletor Inteligente</strong>. O sistema usa câmeras de
-              alta resolução e Inteligência Artificial para analisar cada fruta.
-              A IA classifica cada manga como "Aprovada" (perfeita para mesa) ou
-              "Reprovada" (ideal para polpa). Um mecanismo automatizado separa
-              as frutas com cuidado, garantindo a qualidade inigualável que
-              prometemos.
+              <strong>Funcionalidades Principais:</strong>
+              <ul>
+                  <li>Classificação automática via Visão Computacional.</li>
+                  <li>Dashboard Web para gestão de produção e estatísticas.</li>
+                  <li>App Mobile para operadores com streaming de vídeo.</li>
+                  <li>Hardware (Arduino) para separação física das frutas.</li>
+              </ul>
             </p>
           </div>
         </div>
       </section>
 
-      <section
-        class="video-explicativo"
-        id="video"
-        data-aos="fade-up"
-        data-aos-delay="200"
-      >
-        <h2>Conheça o Sistema</h2>
+      <section class="links-section">
+          <h2>Acesso Rápido ao Sistema</h2>
+          <div class="links-grid">
+              <a href="https://pcqi.onrender.com/screens/index.html" target="_blank" class="link-card">
+                  <h3>Site (Frontend)</h3>
+                  <p>Acesse o Dashboard Administrativo</p>
+              </a>
+              <a href="https://pcqi-api.onrender.com/docs#" target="_blank" class="link-card">
+                  <h3>API de Gestão</h3>
+                  <p>Documentação Swagger (FastAPI)</p>
+              </a>
+              <a href="https://miguel15468-pcqi-ai-api.hf.space/docs#" target="_blank" class="link-card">
+                  <h3>API de IA</h3>
+                  <p>Documentação e Teste de Inferência</p>
+              </a>
+              <a href="https://github.com/JMiguelsilva2003/PCQI/releases" target="_blank" class="link-card">
+                  <h3>App Android</h3>
+                  <p>Download do APK (v1.0)</p>
+              </a>
+          </div>
+          <div class="login-info">
+              <p><strong>Admin:</strong> teste@teste.com | <strong>Senha:</strong> 123456789</p>
+              <p><strong>Comum:</strong> testecomum@testecomum.com | <strong>Senha:</strong> 123456789</p>
+          </div>
+      </section>
+
+      <section class="video-explicativo" id="demonstracao" data-aos="fade-up">
+        <h2>1. Demonstração Completa</h2>
         <p class="subtitulo">
-          Veja como nossa tecnologia mudará a colheita de manga.
+          Apresentação de todas as histórias de usuário implementadas e fluxo completo do sistema.
         </p>
 
         <div class="video-container">
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/TGLUxvph7W0"
-            title="Vídeo de demonstração do Seletor Inteligente"
+            src="https://www.youtube.com/embed/SEU_VIDEO_ID_AQUI" 
+            title="Demonstração do Sistema PCQI"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           >
           </iframe>
         </div>
-
-        <h2>Veja o Sistema em Ação - parte 1</h2>
-        <p class="subtitulo">
-          Veja como nossa tecnologia garante a manga perfeita.
+        <p class="video-desc-text">
+            Neste vídeo demonstramos o Login, Dashboard de Estatísticas, Gestão de Máquinas, Streaming de Vídeo no App, 
+            Classificação da IA em tempo real e o acionamento do Hardware.
         </p>
-        <p>Link: <a href="https://pcqi.onrender.com/screens/index.html"><strong class="dados">SITE</strong></a></p>
-        <p>Link: <a href="https://pcqi-api.onrender.com/docs#"><strong class="dados">API</strong></a></p>
-        <p>Link: <a href="https://miguel15468-pcqi-ai-api.hf.space/docs#"><strong class="dados">API-IA</strong></a></p>
-        <p>Link: <a href="https://github.com/JMiguelsilva2003/PCQI/releases/download/v1.0.0/app-release.apk"><strong class="dados">APP</strong></a></p>
-      <p>Você pode acessar o nosso sistema como ADM usando essa conta: <strong class="dados">teste@teste.com</strong> e essa senha: <strong class="dados">123456789</strong></p>
-      <p>Como usuário comum pode usar <strong class="dados">testecomum@testecomum.com</strong> e essa senha: <strong class="dados">123456789</strong> ou criar uma conta</p>
+      </section>
+
+      <section class="video-explicativo alt-bg" id="arquitetura" data-aos="fade-up">
+        <h2>2. Arquitetura e Tecnologias</h2>
+        <p class="subtitulo">
+          Explicação técnica de como as partes se conectam.
+        </p>
 
         <div class="video-container">
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/pM0Z2DnmBUk"
-            title="Vídeo de demonstração do Seletor Inteligente"
+            src="https://www.youtube.com/embed/SEU_VIDEO_ID_AQUI"
+            title="Arquitetura do PCQI"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           >
           </iframe>
         </div>
+        <div class="tech-stack">
+            <span>FastAPI</span>
+            <span>PyTorch</span>
+            <span>OpenCV</span>
+            <span>Docker</span>
+            <span>PostgreSQL</span>
+            <span>Flutter</span>
+            <span>Arduino</span>
+            <span>JavaScript</span>
+        </div>
+      </section>
 
-        <h2>Veja o Sistema em Ação - parte 2</h2>
+      <section class="video-explicativo" id="docker" data-aos="fade-up">
+        <h2>3. Docker e Testes Automatizados</h2>
         <p class="subtitulo">
-          Veja como nossa tecnologia garante a manga perfeita.
+          Garantia de qualidade e replicabilidade do ambiente.
         </p>
-        <p>Você pode acessar o nosso sistema como ADM usando essa conta: <strong class="dados">teste@teste.com</strong> e essa senha: <strong class="dados">123456789</strong></p>
-        <p>Como usuário comum pode usar <strong class="dados">testecomum@testecomum.com</strong> e essa senha: <strong class="dados">123456789</strong> ou criar uma conta</p>
 
         <div class="video-container">
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/dl7g8zliKMg"
-            title="Vídeo de demonstração do Seletor Inteligente"
+            src="https://www.youtube.com/embed/SEU_VIDEO_ID_AQUI"
+            title="Docker e Testes"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           >
           </iframe>
         </div>
-
-        <div class="video-descricao">
-          <h3>Histórias Implementadas no Projeto:</h3>
-          <ul class="lista-historias">
-            <li>
-              <strong
-                >História 1: Como um administrador do sistema, Eu gostaria de
-                poder criar, nomear e organizar diferentes Setores. Para que eu
-                possa agrupar as máquinas (os seletores de mangas) de forma
-                lógica, de acordo com sua localização ou função na
-                fábrica.</strong
-              >
-              <p>como.</p>
-              <span class="responsavel">Responsável: José Miguel</span>
-            </li>
-            <li>
-              <strong
-                >História 2: Como um administrador do sistema, Eu gostaria de
-                poder adicionar usuários (funcionários) como membros a setores
-                específicos e também promover outros usuários de confiança para
-                a função de "admin". Para que eu possa delegar o controle e a
-                visualização das máquinas de um setor apenas aos funcionários
-                responsáveis por aquela área, mantendo a operação segura e
-                organizada.</strong
-              >
-              <p>como.</p>
-              <span class="responsavel">Responsável: José Miguel</span>
-            </li>
-            <li>
-              <strong
-                >História 3: Como um usuário comum, Eu gostaria de poder
-                registrar um novo dispositivo de hardware no sistema. Para que
-                ele seja associado a um dos setores em que eu trabalho.
-              </strong>
-              <p>como.</p>
-              <span class="responsavel">Responsável: José Miguel</span>
-            </li>
-            <li>
-              <strong
-                >História 4: Como um vendedor, gostaria que o meu futuro seletor
-                funcionasse por intermédio de um microcontrolador que consiga
-                fazer a separação automática das mangas.</strong
-              >
-              <p>como.</p>
-              <span class="responsavel"
-                >Responsável: José Miguel e Júlio César</span
-              >
-            </li>
-            <li>
-              <strong
-                >História 5: Eu como usuário gostaria de utilizar a plataforma
-                web para realizar cadastro e acessar minhas informações.</strong
-              >
-              <p>como.</p>
-              <span class="responsavel">Responsável: Alison Henrique</span>
-            </li>
-            <li>
-              <strong
-                >História 6: Como usuário gostaria que o sistema web tenha uma
-                tela de perfil para ver minhas informações e atualizar meus
-                dados.</strong
-              >
-              <p>como.</p>
-              <span class="responsavel">Responsável: Alison Henrique</span>
-            </li>
-            <li>
-              <strong
-                >História 7: Como usuario gostaria que o sistema web salvasse
-                minhas informações localmente para que as minhas informações
-                sejam acessadas sem necessidade de uma nova requisição.</strong
-              >
-              <p>como.</p>
-              <span class="responsavel">Responsável: Alison Henrique</span>
-            </li>
-            <li>
-              <strong
-                >História 8: Como administrador do sistema, preciso de uma
-                interface visual para gerenciar cadastros e interagir com os
-                dados de forma simples. Eu desenvolvi as telas do aplicativo,
-                cuidando de toda a parte visual e de interação do usuário, e
-                integrei essas interfaces ao backend em FastAPI, consumindo as
-                rotas já existentes. Assim, o usuário final consegue visualizar
-                e enviar informações de maneira prática e dinâmica,
-                transformando a aplicação em um sistema completo, funcional e
-                interativo.</strong
-              >
-              <p>como.</p>
-              <span class="responsavel">Responsável: Pedro Emmanuel</span>
-            </li>
-            <li>
-              <strong
-                >História 9: Como usuário do sistema, quero acessar um dashboard
-                centralizado. Esse dashboard deve conter um ícone de perfil para
-                gerenciar minhas informações pessoais e uma entrada de câmera
-                integrada, conectada ao backend e às APIs já existentes,
-                garantindo que as funcionalidades sejam dinâmicas e
-                sincronizadas com o servidor. Assim, consigo ter uma experiência
-                completa e prática, com acesso rápido às minhas informações e a
-                possibilidade de capturar ou utilizar imagens diretamente no
-                aplicativo, sem depender de soluções externas.</strong
-              >
-              <p>como.</p>
-              <span class="responsavel">Responsável: Pedro Emmanuel</span>
-            </li>
-            <li>
-              <strong
-                >História 10: Eu como administrador quero uma tela em que eu
-                possa fazer meu cadastro e acessar as minhas funções.</strong
-              >
-              <p>como.</p>
-              <span class="responsavel">Responsável: Júlio César</span>
-            </li>
-            <li>
-              <strong
-                >História 11: Como um cliente, eu gostaria de uma tela de
-                dashboard, para acessar a tela de perfil ou a de
-                máquina.</strong
-              >
-              <p>como.</p>
-              <span class="responsavel">Responsável: Júlio César</span>
-            </li>
-            <li>
-              <strong
-                >História 12: Como um vendedor, gostaria que o meu futuro
-                seletor funcionasse por intermédio de um microcontrolador que
-                consiga fazer a separação automática das mangas.</strong
-              >
-              <p>como.</p>
-              <span class="responsavel">Responsável: Júlio César</span>
-            </li>
-            <li>
-              <strong
-                >História 13: Como cliente, desejo me cadastrar na plataforma
-                para que eu possa explorar suas funcionalidades.
-              </strong>
-              <p>como.</p>
-              <span class="responsavel">Responsável: Gustavo Silva</span>
-            </li>
-            <li>
-              <strong
-                >História 14: Como cliente, desejo utilizar a câmera do meu
-                celular para enviar um streaming de vídeo a um servidor para que
-                eu possa utilizar meu celular como um analisador de produtos nas
-                máquinas.</strong
-              >
-              <p>como.</p>
-              <span class="responsavel">Responsável: Gustavo Silva</span>
-            </li>
-            <li>
-              <strong
-                >História 15: Como cliente, desejo listar e adicionar máquinas
-                através do aplicativo mobile para que eu possa visualizar as
-                máquinas vinculadas a minha conta.
-              </strong>
-              <p>como.</p>
-              <span class="responsavel">Responsável: Gustavo Silva</span>
-            </li>
-            <li>
-              <strong
-                >História 16: Como cliente, desejo redefinir minha senha através
-                do aplicativo mobile para que eu possa entrar em minha
-                conta.</strong
-              >
-              <p>como.</p>
-              <span class="responsavel">Responsável: Gustavo Silva</span>
-            </li>
-            <li>
-              <strong
-                >História 17: Como desenvolvedor da IA, quero criar uma segunda
-                API local para receber os dados de streaming de vídeo do
-                aplicativo, para que a IA consiga realizar a identificação de
-                objetos.</strong
-              >
-              <p>como.</p>
-              <span class="responsavel">Responsável: Tomás Amorim</span>
-            </li>
-            <li>
-              <strong
-                >História 18: Como desenvolvedor da IA, quero que a IA
-                identifique objetos nos vídeos recebidos, para que eu obtenha
-                resultados automáticos e confiáveis a partir do modelo já
-                treinado.</strong
-              >
-              <p>como.</p>
-              <span class="responsavel">Responsável: Tomás Amorim</span>
-            </li>
-          </ul>
-        </div>
+        <p class="video-desc-text">
+            Demonstração da execução dos 44 testes unitários da API, testes E2E do Frontend com Selenium 
+            e o processo de build do Docker Multi-Stage.
+        </p>
       </section>
 
       <section class="equipa" id="equipa" data-aos="fade-up">
         <h2>Nossa Equipe</h2>
         <p class="subtitulo">Os rostos por trás da tecnologia</p>
         <div class="equipa-grid">
-          <div
-            class="membro-equipa"
-            data-name="José Miguel"
-            data-github="https://github.com/JMiguelsilva2003"
-            data-img="imagens/jm.png"
-          >
+          <div class="membro-equipa" data-name="José Miguel" data-github="https://github.com/JMiguelsilva2003" data-img="imagens/jm.png">
             <img src="imagens/jm.png" alt="Foto de Jose Miguel" />
             <h4>José Miguel</h4>
-            <p>Desenvolvedor back-end</p>
+            <p>Backend & Hardware (IoT)</p>
           </div>
 
-          <div
-            class="membro-equipa"
-            data-name="Júlio Cesar"
-            data-github="https://github.com/jcfern87"
-            data-img="imagens/js.jpeg"
-          >
+          <div class="membro-equipa" data-name="Júlio Cesar" data-github="https://github.com/jcfern87" data-img="imagens/js.jpeg">
             <img src="imagens/js.jpeg" alt="Foto de Julio Cesar" />
             <h4>Júlio César</h4>
-            <p>Desenvolvedor Web</p>
+            <p>Frontend Web & Gestão</p>
           </div>
 
-          <div
-            class="membro-equipa"
-            data-name="Alison Henrique"
-            data-github="https://github.com/AlisonHSerpa"
-            data-img="imagens/as.jpeg"
-          >
+          <div class="membro-equipa" data-name="Alison Henrique" data-github="https://github.com/AlisonHSerpa" data-img="imagens/as.jpeg">
             <img src="imagens/as.jpeg" alt="Foto de Alison Henrique" />
             <h4>Alison Henrique</h4>
-            <p>Desenvolvedor Web</p>
+            <p>Frontend Web & Dados</p>
           </div>
 
-          <div
-            class="membro-equipa"
-            data-name="Gustavo Silva"
-            data-github="https://github.com/gustavof0411"
-            data-img="imagens/gf.jpeg"
-          >
+          <div class="membro-equipa" data-name="Gustavo Silva" data-github="https://github.com/gustavof0411" data-img="imagens/gf.jpeg">
             <img src="imagens/gf.jpeg" alt="Foto de Gustavo Silva" />
             <h4>Gustavo Silva</h4>
-            <p>Desenvolvedor Mobile</p>
+            <p>Mobile Dev & Integração</p>
           </div>
 
-          <div
-            class="membro-equipa"
-            data-name="Pedro Emmanuel"
-            data-github="https://github.com/Pedro-Emmanuel-G-C-Machado"
-            data-img="imagens/pm.jpeg"
-          >
+          <div class="membro-equipa" data-name="Pedro Emmanuel" data-github="https://github.com/Pedro-Emmanuel-G-C-Machado" data-img="imagens/pm.jpeg">
             <img src="imagens/pm.jpeg" alt="Foto de Pedro Emmanuel" />
             <h4>Pedro Emmanuel</h4>
-            <p>Desenvolvedor Mobile</p>
+            <p>Mobile Dev & UI/UX</p>
           </div>
 
-          <div
-            class="membro-equipa"
-            data-name="Tomás Amorim"
-            data-github="https://github.com/tomastm22"
-            data-img="imagens/ta.png"
-          >
+          <div class="membro-equipa" data-name="Tomás Amorim" data-github="https://github.com/tomastm22" data-img="imagens/ta.png">
             <img src="imagens/ta.png" alt="Foto de Tomas Amorim" />
             <h4>Tomás Amorim</h4>
-            <p>Desenvolvedor da IA</p>
+            <p>Engenheiro de IA & ML</p>
           </div>
         </div>
       </section>
@@ -425,30 +226,16 @@
       <section class="conclusao" id="contato" data-aos="fade-up">
         <h2>A Revolução da Qualidade na Sua Colheita</h2>
         <p>
-          No mercado atual, "bom" não é mais suficiente. Seus clientes exigem
-          perfeição. A nossa solução de seleção inteligente não é apenas uma
-          máquina; é a garantia de que cada manga que sai da sua plantação
-          representa o melhor da sua marca.
+          No mercado atual, "bom" não é mais suficiente. O PCQI garante que cada manga que sai da sua plantação representa o melhor da sua marca.
         </p>
-        <p>
-          Reduza o desperdício, otimize sua mão de obra e eleve seu padrão de
-          qualidade com dados e automação. Deixe a nossa IA fazer o trabalho
-          difícil e concentre-se no que faz melhor: cultivar mangas excecionais.
-        </p>
-        <a href="https://github.com/JMiguelsilva2003" class="cta-button"
-          >Fale Connosco e Transforme Sua Produção</a
-        >
+        <a href="https://github.com/JMiguelsilva2003" class="cta-button">Acesse o Código Fonte</a>
       </section>
 
       <footer class="rodape">
-        <h3>QUALIDADE INIGUALÁVEL</h3>
+        <h3>PCQI - QUALIDADE INIGUALÁVEL</h3>
         <div class="rodape-contato">
-          <span
-            ><a href="https://github.com/JMiguelsilva2003/PCQI">GitHub</a></span
-          >
-          <span
-            >&copy; 2025 PCQI-Landing_page. Todos os direitos reservados.</span
-          >
+          <span><a href="https://github.com/JMiguelsilva2003/PCQI">GitHub</a></span>
+          <span>&copy; 2025 PCQI Team. Todos os direitos reservados.</span>
         </div>
       </footer>
     </main>
